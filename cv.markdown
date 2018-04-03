@@ -1,14 +1,16 @@
 ---
 layout: default
 title: Curriculum Vitae
+permalink: /cv/
+order: 2
+category: en
 ---
-<h1>{{ page.title }}</h1>
 
 <p>Refer to <a href="http://linkedin.com/in/jangrosche">my LinkedIn page</a> for a comprehensive version of my CV. Here&#8217;s a fun fact: I created my own writing system for a novel; sentences look like trees, syllables are their branches and letters are represented by leafs.</p>
 
 
 
-<h2>Education</h2>
+## Education
 
 <table>
     <tr>
@@ -30,7 +32,7 @@ title: Curriculum Vitae
 
 
 
-<h2>Employment</h2>
+## Employment
 
 <table>
     <tr>
@@ -76,7 +78,7 @@ title: Curriculum Vitae
 
 
 
-<h2>Volunteer Work</h2>
+## Volunteer Work
 
 <table>
     <tr>
@@ -106,7 +108,7 @@ title: Curriculum Vitae
 
 
 
-<h2>Languages</h2>
+## Languages
 
 <table>
     <tr>
@@ -132,7 +134,7 @@ title: Curriculum Vitae
 
 
 
-<h2>Skills &amp; Interests</h2>
+## Skills &amp; Interests
 
 <table>
     <tr>

@@ -1,22 +1,10 @@
 ---
 layout: default
 title: Intro
+order: 1
+category: en
 ---
-<h1>{{ page.title }}</h1>
-<ul class="posts">
 
-<p>
 A place for me to structure things – that's the original purpose of this website. It helps me form thoughts, keep track of projects I enjoy, and push my limits by releasing own work to the public. In fact, I enjoy writing short stories and longer fiction in my spare time and the occasional piece does end up on here. By now, you may also find further information on me; and despite this being a rather vague call, I am happy to get in touch with anyone who has interesting things to share or discuss. Browse around and feel free to contact me.
-</p>
 
-<p>
 Having said that – welcome to my website! Come closer and have a look.
-</p>
-
-<!--
-<p>
-The most important reason for this website is being occupied with things I enjoy: formulating sentences; organizing thoughts; writing down impressions. If I can get in touch with nice people on the way – even better. That said, there’s no magic here, but if you have any remarks and are a friendly person, please <a href="/contact">do get in touch</a>!
-</p>
--->
-
-</ul>

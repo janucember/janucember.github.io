@@ -141,9 +141,6 @@ nav p > a {
     padding-bottom: .6em;
 }
 
-#mobile_navigation_wrapper {
-    display: none;
-}
 
 nav:active #mobile_navigation_wrapper, nav:hover #mobile_navigation_wrapper {
     display: block;
