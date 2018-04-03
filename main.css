@@ -8,6 +8,43 @@
     color: #f0f0f0;
 }
 
+@font-face {
+    font-family: 'MerriweatherC';
+    src: url('fonts/Merriweather-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MerriweatherC';
+    src: url('fonts/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceC';
+    src: url('fonts/SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceC';
+    src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceB';
+    src: url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
 
 * {
     margin: 0;
@@ -26,57 +63,6 @@ body {
 }
 
 
-/********/
-/* head */
-/********/
-
-#head_bar {
-
-    background-color: #000;
-    display: none;
-    width: 100%;
-    font-family: "Merriweather", Times, "Times New Roman", serif;
-    font-weight: 300;
-    text-align: center;
-
-    margin-bottom: 0;
-}
-
-@media only screen and (min-width: 830px) {
-    #head_wrapper {
-        margin: 0 auto;
-        width: 800px;
-    }
-
-    #head_bar {
-        margin-bottom: 3em;
-    }
-}
-
-@media only print {
-    #head_wrapper {
-        display: none;
-    }
-}
-
-
-
-#head_text {
-    color: #f0f0f0;
-    font-size: 1.5em;
-    text-transform: lowercase;
-    margin-top: .4em;
-    margin-bottom: .4em;
-}
-
-
-@media only screen and (min-width: 830px) {
-    #head_text {
-        display: block;
-        float: left;
-        margin-left: 8.4em;
-    }
-}
 
 /********/
 /* main */
@@ -98,15 +84,16 @@ nav {
     float: center;
 
     text-align: center;
-    text-transform: lowercase;
 }
 
 #my_name {
     padding-top: 1em;
-    padding-bottom: 0;
+    padding-bottom: .8em;
     background-color: #e0e0e0;
-	font-size: 1.3em;
-    font-weight: 500;
+	
+	font-family: MerriweatherC, Times, "Times New Roman", serif;
+	font-size: 1.2em;
+    font-weight: bold;
     text-transform: lowercase;
     
 /*     border-bottom-style: solid;
@@ -114,13 +101,14 @@ nav {
 }
 
 #menu_button {
+    display: none;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-bottom: 2em;
 
     background-color: #e0e0e0;
 
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: SourceC, Helvetica, Arial, sans-serif;
     font-size: 1em;
 
     text-transform: lowercase;
@@ -147,10 +135,12 @@ nav:active #mobile_navigation_wrapper, nav:hover #mobile_navigation_wrapper {
 }
 
 
+
 @media only screen and (min-width: 830px) {
     #my_name {
         margin-top: 0;
         margin-bottom: 1.45em;
+        padding-bottom: 0em;
         
         background-color: transparent;
     }
@@ -173,16 +163,15 @@ nav li {
     margin-top: .5em;
     margin-bottom: .5em;
     font-size: 1.3em;
+    text-transform: lowercase;
+    letter-spacing: .1em;
 }
 
 nav a {
     color: #000000;
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-family: SourceC, Helvetica, Arial, sans-serif;
 
     text-decoration: none;
-
-    letter-spacing: .13em;
 
     padding-left: .5em;
     padding-right: .3em;
@@ -192,7 +181,7 @@ nav a {
 
 nav a.active {
     color: #f0f0f0;
-    background-color: #ff0066;
+    background-color: #000;
 }
 
 nav h1 {
@@ -201,14 +190,13 @@ nav h1 {
     padding: .4em;
     padding-left: 3em;
     padding-right: 3em;
-    margin-bottom: 1em;
+    
+    color: #ff0066;
 
-    font-size: 1em;
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    font-weight: 600;
+    font-family: SourceB, Helvetica, Arial, sans-serif;
 
-    border-bottom-style: solid;
-    border-width: 1px;
+/*     border-bottom-style: solid; */
+/*     border-width: 2px; */
 
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -270,10 +258,8 @@ nav h1 {
 
     margin-left: 1em;
     margin-right: 1em;
-    margin-top: 1.2em;
 
-    font-family: "Merriweather", Times, "Times New Roman", serif;
-    font-weight: 300;
+    font-family: MerriweatherC, Times, "Times New Roman", serif;
     font-size: .9em;
 }
 
@@ -285,7 +271,8 @@ nav h1 {
     #main_column {
         width: 550px;
 
-        margin-left: 4em;
+        margin-left: 5.5em;
+        margin-top: 5.3em;
 
         font-size: .8em;
     }
@@ -311,20 +298,20 @@ nav h1 {
 }
 
 #inhalt h1 {
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    font-size: 3.5em;
-    font-weight: 200;
+    font-family: SourceC, Helvetica, Arial, sans-serif;
+    font-size: 4em;
+    font-weight: 100;
 
     line-height: 1;
 
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 }
 
 #inhalt h2 {
     margin-top: 2em;
     margin-bottom: .5em;
 
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: SourceC, Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: .05em;
