@@ -1,0 +1,407 @@
+/* selection colours */
+::selection {
+    background: #ff0066; /* Safari */
+    color: #f0f0f0;
+    }
+::-moz-selection {
+    background: #ff0066; /* Firefox */
+    color: #f0f0f0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    background-color: #f9f9f9;
+}
+
+@media only print {
+    body {
+    	background-color: #ffff;
+    }
+}
+
+
+/********/
+/* head */
+/********/
+
+#head_bar {
+
+    background-color: #000;
+    display: none;
+    width: 100%;
+    font-family: "Merriweather", Times, "Times New Roman", serif;
+    font-weight: 300;
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 830px) {
+    #head_wrapper {
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    #head_bar {
+        margin-bottom: 3em;
+    }
+}
+
+@media only print {
+    #head_wrapper {
+        display: none;
+    }
+}
+
+
+
+#head_text {
+    color: #f0f0f0;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+
+@media only screen and (min-width: 830px) {
+    #head_text {
+        display: block;
+        float: left;
+        margin-left: 8.4em;
+    }
+}
+
+/********/
+/* main */
+/********/
+
+@media only screen and (min-width: 830px) {
+    #main_wrapper {
+        margin: 0 auto;
+        margin-top: 3em;
+        width: 800px;
+        clear: both
+    }
+}
+
+
+
+nav {
+    display: block;
+    float: center;
+
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#my_name {
+    padding-top: 1em;
+    padding-bottom: 0;
+    background-color: #e0e0e0;
+	font-size: 1.3em;
+    font-weight: 500;
+    text-transform: lowercase;
+    
+/*     border-bottom-style: solid;
+    border-width: 1px; */
+}
+
+#menu_button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+
+    background-color: #e0e0e0;
+
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+
+    text-transform: lowercase;
+
+    letter-spacing: .15em;
+}
+
+@media only print {
+    #menu_button {
+        display: none;
+    }
+}
+
+nav p > a {
+    display: block;
+
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+#mobile_navigation_wrapper {
+    display: none;
+}
+
+nav:active #mobile_navigation_wrapper, nav:hover #mobile_navigation_wrapper {
+    display: block;
+}
+
+
+@media only screen and (min-width: 830px) {
+    #my_name {
+        margin-top: 0;
+        margin-bottom: 1.45em;
+        
+        background-color: transparent;
+    }
+    
+    #menu_button {
+        display: none;
+    }
+
+    #mobile_navigation_wrapper {
+        display: block;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 3em;
+}
+
+nav li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 1.3em;
+}
+
+nav a {
+    color: #000000;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    letter-spacing: .13em;
+
+    padding-left: .5em;
+    padding-right: .3em;
+    padding-top: .1em;
+    padding-bottom: .2em;
+}
+
+nav a.active {
+    color: #f0f0f0;
+    background-color: #ff0066;
+}
+
+nav h1 {
+    display: inline-block;
+
+    padding: .4em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 1em;
+
+    font-size: 1em;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+
+    border-bottom-style: solid;
+    border-width: 1px;
+
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+@media only screen and (min-width: 830px) {
+    nav {
+        float: left;
+        width: 150px;
+        text-align: right;
+    }
+
+    nav a {
+        display: inline;
+
+        padding-right: .2em; /* auch nav h1 {padding-right} beachten */
+
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    nav ul {
+        padding-bottom: none;
+    }
+
+    nav li {
+        margin-bottom: .5em;
+        font-size: .95em;
+    }
+
+    nav h1 {
+        display: block;
+
+        padding: 0;
+        padding-top: .3em;
+        padding-bottom: .2em;
+        padding-right: .2em; /* auch nav a {padding-right} beachten */
+
+        text-align: right;
+        font-size: .8em;
+        font-weight: 400;
+    }
+}
+
+@media only print {
+    nav {
+        display: none;
+    }
+}
+
+
+/***********/
+/* content */
+/***********/
+
+#main_column {
+    display: block;
+    float: left;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1.2em;
+
+    font-family: "Merriweather", Times, "Times New Roman", serif;
+    font-weight: 300;
+    font-size: .9em;
+}
+
+#main_column a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 830px) {
+    #main_column {
+        width: 550px;
+
+        margin-left: 4em;
+
+        font-size: .8em;
+    }
+}
+
+@media only print {
+    #main_column {
+        margin-left: 2.5cm;
+        margin-right: 2.5cm;
+
+        font-size: 0.5em;
+    }
+}
+
+
+
+#inhalt {
+    line-height: 1.9;
+}
+
+#inhalt p + p {
+    text-indent: 2em;
+}
+
+#inhalt h1 {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 3.5em;
+    font-weight: 200;
+
+    line-height: 1;
+
+    margin-bottom: .8em;
+}
+
+#inhalt h2 {
+    margin-top: 2em;
+    margin-bottom: .5em;
+
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+#inhalt h3 {
+    float: left;
+    width: 100%;
+
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: .05em;
+}
+
+#inhalt h2 + h3,
+#inhalt h1 + h3 {
+    margin-top: 0em;;
+}
+
+#inhalt li {
+    list-style-position: inside;
+}
+
+#inhalt .posts > li {
+    list-style-type: none;
+}
+
+#inhalt .posts > li + li {
+    margin-top: 2em;
+}
+
+#contact_information {
+    margin-left: -.4em;
+}
+
+#inhalt a,
+footer a {
+    color: black;
+    text-decoration: none;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #a0a0a0;
+}
+
+@media only print {
+    #inhalt a, footer a {
+        border-bottom-width: .3px;
+        border-bottom-color: #000000;
+    }
+}
+
+#inhalt tr {
+    vertical-align: top;
+}
+
+@media only screen and (min-width: 830px) {
+    margin-bottom: 3em;
+}
+
+footer {
+    padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 830px) {
+    footer {
+        padding-bottom: 5em;
+    }
+    footer li {
+        float: left;
+        list-style-type: none;
+        padding-right: 1em;
+    }
+}

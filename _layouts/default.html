@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="format-detection" content="telephone=no">
+            <meta name="viewport" content="initial-scale=1.0">
+
+            <title>jan grosche</title>
+
+            <link rel="stylesheet" type="text/css" href="/css/main.css"> <!-- link to main stylesheet -->
+	    <link rel="shortcut icon" href="/favicon.png">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:200,400,600" rel="stylesheet"> <!-- google fonts -->
+        </head>
+
+        <body>
+
+<!-- kopfzeile -->
+            <div id="head_bar">
+                <div id="head_wrapper">
+                    <div id="head_text">Jan Grosche</div> <!-- site title -->
+                </div> <!-- #head_wrapper -->
+            </div> <!-- #head_bar -->
+
+<!-- wrapper -->
+            <div id="main_wrapper">
+
+<!-- navigation -->
+                <nav>
+                    <p><a href="/" id='my_name'>Jan Grosche</a></p>
+                    <p><a href="#" id='menu_button'>Menu</a></p>
+                    <div id="mobile_navigation_wrapper">
+                        <h1>English</h1>
+                        <ul>
+                            <li>
+                                <a {% if page.url == "/" %}class="active"{% endif %} href="/">Intro</a>
+                            </li>
+
+                            <li>
+                                <a {% if page.url == "/cv.html" %}class="active"{% endif %} href="/cv">CV</a>
+                            </li>
+
+                            <li>
+                                <a {% if page.url == "/collection.html" %}class="active"{% endif %} href="/collection">Collection</a>
+                            </li>
+
+                        </ul>
+
+                        <h1>Deutsch</h1>
+                        <ul>
+                            <li>
+                                <a {% if page.url == "/sammlung.html" %}class="active"{% endif %} href="/sammlung">Sammlung</a>
+                            </li>
+                        </ul>
+
+                        <h1>etc</h1>
+                        <ul>
+                            <li>
+                                <a {% if page.url == "/contact.html" %}class="active"{% endif %} href="/contact">Contact</a>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com/jangrosche">Twitter</a>
+                            </li>
+
+                            <li>
+                                <a href="https://linkedin.com/in/jangrosche">LinkedIn</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/janucember">Github</a>
+                            </li>
+                        </ul>
+                    </div> <!-- #mobile_navigation_wrapper -->
+                </nav>
+
+<!-- main column -->
+                <div id="main_column">
+
+<!-- inhalt -->
+                    <div id="inhalt">
+                        {{ content }}
+                    </div>
+
+<!-- fusszeile -->
+                    <footer>
+                        <ul>
+                        </ul>
+                    </footer>
+
+                </div> <!-- #main_column -->
+
+            </div> <!-- #main_wrapper -->
+        </body>
+    </html>
