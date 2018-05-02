@@ -118,7 +118,7 @@ category: en
 
     <tr>
         <td style="width: 11em; padding-right: 2em;">English</td>
-        <td>TOEFL iBT (2016-03): 104 of 120. since 2001; eight months in Alberta and British Columbia, Canada.</td>
+        <td>TOEFL iBT (2016-03): 104 of 120. since 2001; eight months in Alberta and British Columbia, Canada, working on postgrad in the UK.</td>
     </tr>
 
     <tr>
