@@ -7,7 +7,7 @@ category: de
 
 <h2>Kurzgeschichten</h2>
 
-<p>Meine Sammlung an Kurzgeschichten ist <a href="https://github.com/janucember/creative-writing-german/blob/master/README.markdown">hier</a> zu finden.</p>
+<p>Meine Sammlung an Kurzgeschichten ist <a href="https://gitlab.com/janucember/creative-writing/tree/master/deutsch">hier</a> zu finden.</p>
 
 <h2>Größere Projekte</h2>
 

@@ -9,7 +9,7 @@ category: en
 ## My Writings
 
 * [Collection, Mission, Archive – Managing Files And Folders Consistently](https://medium.com/@jangrosche/collection-mission-archive-30a95bb1d647)
-* [My tries on prose in English](https://github.com/janucember/creative-writing-english)
+* [My tries on prose in English](https://gitlab.com/janucember/creative-writing/tree/master/english)
 
 
 
