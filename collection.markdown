@@ -15,6 +15,7 @@ category: en
 
 ## Recommended Readings
 
+* [Guidelines for good looking tables according to Simon Fear](https://ctan.org/pkg/booktabs) – less of a reading than a manual, but the five rules in section 2 of the manual seem to be worth sticking to.
 * [Liberal Arts in the Data Age](https://hbr.org/2017/07/liberal-arts-in-the-data-age)
 * [What scientific term or concept ought to be more widely known? Stephen Pinker on the second law of thermodynamics](https://www.edge.org/response-detail/27023)
 * [Offline Only](https://chris.bolin.co/offline/)
